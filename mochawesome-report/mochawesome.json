@@ -1,0 +1,831 @@
+{
+  "stats": {
+    "suites": 10,
+    "tests": 10,
+    "passes": 10,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-02T08:46:42.121Z",
+    "end": "2023-12-02T08:47:48.641Z",
+    "duration": 66520,
+    "testsRegistered": 10,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "70bfc1c1-7aa6-48b4-aa43-73fa386ead1a",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ab1eee6f-a22a-4cd4-9a28-85bde45fd725",
+          "title": "Play Button Visibility Test",
+          "fullFile": "C:\\Users\\235na\\WebstormProjects\\mogul-christmas\\test\\test.js",
+          "file": "\\test\\test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Play Button Visibility Test\"",
+              "fullTitle": "Play Button Visibility Test \"before all\" hook in \"Play Button Visibility Test\"",
+              "timedOut": false,
+              "duration": 1464,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build();",
+              "err": {},
+              "uuid": "4f713699-5784-4564-95f2-8c6a293a1d31",
+              "parentUUID": "ab1eee6f-a22a-4cd4-9a28-85bde45fd725",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Play Button Visibility Test\"",
+              "fullTitle": "Play Button Visibility Test \"after all\" hook in \"Play Button Visibility Test\"",
+              "timedOut": false,
+              "duration": 94,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "0717d7fc-4609-48f3-b106-2459783379e7",
+              "parentUUID": "ab1eee6f-a22a-4cd4-9a28-85bde45fd725",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should check the visibility of the Play button",
+              "fullTitle": "Play Button Visibility Test should check the visibility of the Play button",
+              "timedOut": false,
+              "duration": 7149,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get('C:\\\\Users\\\\235na\\\\WebstormProjects\\\\mogul-christmas\\\\index.html');\n// Find play button using id play-btn\nlet playButton = await driver.findElement(By.id('play-btn'));\n// Play button should be displayed\nlet isPlayButtonDisplayedInitially = await playButton.isDisplayed();\nassert.strictEqual(isPlayButtonDisplayedInitially, true);\n// Click on the play button\nawait playButton.click();\nawait driver.sleep(3000);\n// Play button should be hidden\nlet isPlayButtonHidden = await playButton.isDisplayed();\nassert.strictEqual(isPlayButtonHidden, false);\nawait driver.sleep(2000);",
+              "err": {},
+              "uuid": "1ca3b1ce-16df-4bbb-a768-14a042ed7388",
+              "parentUUID": "ab1eee6f-a22a-4cd4-9a28-85bde45fd725",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1ca3b1ce-16df-4bbb-a768-14a042ed7388"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7149,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "c8af7084-2189-4cf6-87be-9c110950688d",
+          "title": "Mode Switch Test",
+          "fullFile": "C:\\Users\\235na\\WebstormProjects\\mogul-christmas\\test\\test.js",
+          "file": "\\test\\test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Mode Switch Test\"",
+              "fullTitle": "Mode Switch Test \"before all\" hook in \"Mode Switch Test\"",
+              "timedOut": false,
+              "duration": 1383,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build();",
+              "err": {},
+              "uuid": "8c473cb5-a4e6-4622-8572-aafa0b9dbe55",
+              "parentUUID": "c8af7084-2189-4cf6-87be-9c110950688d",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Mode Switch Test\"",
+              "fullTitle": "Mode Switch Test \"after all\" hook in \"Mode Switch Test\"",
+              "timedOut": false,
+              "duration": 119,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "55ebcdfe-796c-4a70-a0f0-6229c13fe2f6",
+              "parentUUID": "c8af7084-2189-4cf6-87be-9c110950688d",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should change mode from light to dark",
+              "fullTitle": "Mode Switch Test should change mode from light to dark",
+              "timedOut": false,
+              "duration": 2919,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get('C:\\\\Users\\\\235na\\\\WebstormProjects\\\\mogul-christmas\\\\index.html');\nlet bodyElement = await driver.findElement(By.tagName('body'));\n// Should be light mode\nlet isLightMode = await bodyElement.getAttribute('data-mode') === 'light';\n// Find button by id round and click on this button\nlet toggleButton = await driver.findElement(By.id('round'));\nawait toggleButton.click();\nawait driver.sleep(1000);\n// Mode should be dark\nlet updatedMode = await bodyElement.getAttribute('data-mode');\nassert.strictEqual(isLightMode, updatedMode === 'dark');",
+              "err": {},
+              "uuid": "c35c4277-03ca-443c-813b-1c6884529967",
+              "parentUUID": "c8af7084-2189-4cf6-87be-9c110950688d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c35c4277-03ca-443c-813b-1c6884529967"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2919,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "cbef794c-3bb4-43a9-aaca-5a1330d6f5d2",
+          "title": "Clear Time Left Test",
+          "fullFile": "C:\\Users\\235na\\WebstormProjects\\mogul-christmas\\test\\test.js",
+          "file": "\\test\\test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Clear Time Left Test\"",
+              "fullTitle": "Clear Time Left Test \"before all\" hook in \"Clear Time Left Test\"",
+              "timedOut": false,
+              "duration": 1195,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build();",
+              "err": {},
+              "uuid": "0ed63b9f-6ea5-4970-a616-29d2b27c2448",
+              "parentUUID": "cbef794c-3bb4-43a9-aaca-5a1330d6f5d2",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Clear Time Left Test\"",
+              "fullTitle": "Clear Time Left Test \"after all\" hook in \"Clear Time Left Test\"",
+              "timedOut": false,
+              "duration": 87,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "a3634fa2-9f2e-4cd2-a268-00e6e0212732",
+              "parentUUID": "cbef794c-3bb4-43a9-aaca-5a1330d6f5d2",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should clear the active class from time left elements",
+              "fullTitle": "Clear Time Left Test should clear the active class from time left elements",
+              "timedOut": false,
+              "duration": 1798,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get('C:\\\\Users\\\\235na\\\\WebstormProjects\\\\mogul-christmas\\\\index.html');\n// Simulation of active class\nlet firstTimeLeftElement = await driver.findElement(By.css('.song_item .time-left'));\nawait driver.executeScript(\"arguments[0].classList.add('active')\", firstTimeLeftElement);\n// clearTimeLeft() should remove active class\nawait driver.executeScript(\"clearTimeLeft()\");\n// Get class from time left\nlet updatedFirstTimeLeftElement = await driver.findElement(By.css('.song_item .time-left'));\nlet classes = await updatedFirstTimeLeftElement.getAttribute('class');\nlet hasActiveClass = /active/.test(classes);   // regular expression\n// class active should be removed\nassert.strictEqual(hasActiveClass, false);",
+              "err": {},
+              "uuid": "3f66bce9-ee66-4eb4-b233-1a424a7d816a",
+              "parentUUID": "cbef794c-3bb4-43a9-aaca-5a1330d6f5d2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3f66bce9-ee66-4eb4-b233-1a424a7d816a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1798,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "728a0071-d042-4464-898b-0b5288aa2220",
+          "title": "Volume Change Test",
+          "fullFile": "C:\\Users\\235na\\WebstormProjects\\mogul-christmas\\test\\test.js",
+          "file": "\\test\\test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Volume Change Test\"",
+              "fullTitle": "Volume Change Test \"before all\" hook in \"Volume Change Test\"",
+              "timedOut": false,
+              "duration": 1220,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build();",
+              "err": {},
+              "uuid": "8faaf5a6-6ec9-4021-a1dc-b20ed2bd58c2",
+              "parentUUID": "728a0071-d042-4464-898b-0b5288aa2220",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Volume Change Test\"",
+              "fullTitle": "Volume Change Test \"after all\" hook in \"Volume Change Test\"",
+              "timedOut": false,
+              "duration": 138,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "0cc50ada-2521-4f87-9a34-cfe30da8f9ca",
+              "parentUUID": "728a0071-d042-4464-898b-0b5288aa2220",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should change the volume",
+              "fullTitle": "Volume Change Test should change the volume",
+              "timedOut": false,
+              "duration": 6044,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get('C:\\\\Users\\\\235na\\\\WebstormProjects\\\\mogul-christmas\\\\index.html');\n// Find volume bar\nlet volumeBar = await driver.findElement(By.id('volume-bar'));\nawait driver.sleep(1000);\n// Get value of initial volume\nlet initialVolume = await volumeBar.getAttribute('value');\nawait driver.sleep(1000);\n// Change volume using arrow\nawait driver.actions().click(volumeBar).sendKeys(Key.ARROW_RIGHT).perform();\nawait driver.sleep(1000);\n// Get updated volume\nlet updatedVolume = await volumeBar.getAttribute('value');\nawait driver.sleep(1000);\n// Updated volume should be different from initial volume\nassert.notStrictEqual(initialVolume.trim(), updatedVolume.trim());",
+              "err": {},
+              "uuid": "af11eb08-aa99-4f6b-bc87-e52b33c3de8b",
+              "parentUUID": "728a0071-d042-4464-898b-0b5288aa2220",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "af11eb08-aa99-4f6b-bc87-e52b33c3de8b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6044,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "b9ed867e-08b5-4446-9fc6-69a59325a701",
+          "title": "Play Song from Playlist Test",
+          "fullFile": "C:\\Users\\235na\\WebstormProjects\\mogul-christmas\\test\\test.js",
+          "file": "\\test\\test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Play Song from Playlist Test\"",
+              "fullTitle": "Play Song from Playlist Test \"before all\" hook in \"Play Song from Playlist Test\"",
+              "timedOut": false,
+              "duration": 1297,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build();",
+              "err": {},
+              "uuid": "8f04f35c-4a50-40ed-9985-3e58006f0094",
+              "parentUUID": "b9ed867e-08b5-4446-9fc6-69a59325a701",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Play Song from Playlist Test\"",
+              "fullTitle": "Play Song from Playlist Test \"after all\" hook in \"Play Song from Playlist Test\"",
+              "timedOut": false,
+              "duration": 131,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "90a6f555-3e60-4219-92e1-faf45cf52c0f",
+              "parentUUID": "b9ed867e-08b5-4446-9fc6-69a59325a701",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should play a song from the playlist",
+              "fullTitle": "Play Song from Playlist Test should play a song from the playlist",
+              "timedOut": false,
+              "duration": 5041,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get('C:\\\\Users\\\\235na\\\\WebstormProjects\\\\mogul-christmas\\\\index.html');\n// Find song using id\nlet songElement = await driver.findElement(By.id('song_Little_Saint_Nick'));\n// Click on the song\nawait songElement.click();\nawait driver.sleep(3000);\n// Play button should be hidden when song is playing\nlet playState = await driver.executeScript(\n    'return document.querySelector(\"#play-btn\").classList.contains(\"hidden\")'\n);\nassert.strictEqual(playState, true);",
+              "err": {},
+              "uuid": "83d76862-ee7c-4aca-ab3d-75b40888360b",
+              "parentUUID": "b9ed867e-08b5-4446-9fc6-69a59325a701",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "83d76862-ee7c-4aca-ab3d-75b40888360b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5041,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "0d6714ec-c15e-4129-ba1b-bf83f7d29e63",
+          "title": "Play Pause Test",
+          "fullFile": "C:\\Users\\235na\\WebstormProjects\\mogul-christmas\\test\\test.js",
+          "file": "\\test\\test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Play Pause Test\"",
+              "fullTitle": "Play Pause Test \"before all\" hook in \"Play Pause Test\"",
+              "timedOut": false,
+              "duration": 1297,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build();",
+              "err": {},
+              "uuid": "7675437e-dc0a-4e30-87ed-f036555863e5",
+              "parentUUID": "0d6714ec-c15e-4129-ba1b-bf83f7d29e63",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Play Pause Test\"",
+              "fullTitle": "Play Pause Test \"after all\" hook in \"Play Pause Test\"",
+              "timedOut": false,
+              "duration": 122,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "9e1b1d1c-67c8-4b9f-9212-63d6da4ed7d5",
+              "parentUUID": "0d6714ec-c15e-4129-ba1b-bf83f7d29e63",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should play and pause the video",
+              "fullTitle": "Play Pause Test should play and pause the video",
+              "timedOut": false,
+              "duration": 7877,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get('C:\\\\Users\\\\235na\\\\WebstormProjects\\\\mogul-christmas\\\\index.html');\n// Find play button and pause button\nlet playButton = await driver.findElement(By.id('play-btn'));\nlet pauseButton = await driver.findElement(By.id('pause-btn'));\n// Click on the play button\nawait playButton.click();\nawait driver.sleep(3000);\n// Check if the pause button is displayed after click on the play button\nlet isPauseButtonDisplayed = await pauseButton.isDisplayed();\nassert.strictEqual(isPauseButtonDisplayed, true);\n// Click on the pause button\nawait pauseButton.click();\nawait driver.sleep(3000); // Wait for the video to pause\n// Check if the play button is displayed after click on the pause button\nlet isPlayButtonDisplayed = await playButton.isDisplayed();\nassert.strictEqual(isPlayButtonDisplayed, true);",
+              "err": {},
+              "uuid": "556f747a-78b4-44c1-98c1-9e75d7dbac7d",
+              "parentUUID": "0d6714ec-c15e-4129-ba1b-bf83f7d29e63",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "556f747a-78b4-44c1-98c1-9e75d7dbac7d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7877,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "bd561557-caca-486d-be7f-018c5e4e8956",
+          "title": "Stop Button Test",
+          "fullFile": "C:\\Users\\235na\\WebstormProjects\\mogul-christmas\\test\\test.js",
+          "file": "\\test\\test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Stop Button Test\"",
+              "fullTitle": "Stop Button Test \"before all\" hook in \"Stop Button Test\"",
+              "timedOut": false,
+              "duration": 1268,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build();",
+              "err": {},
+              "uuid": "7999f8ae-6ec1-4022-bf1b-a5447d9ad941",
+              "parentUUID": "bd561557-caca-486d-be7f-018c5e4e8956",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Stop Button Test\"",
+              "fullTitle": "Stop Button Test \"after all\" hook in \"Stop Button Test\"",
+              "timedOut": false,
+              "duration": 167,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "6dd85b78-51d6-4e2f-b914-69b2d9e8c545",
+              "parentUUID": "bd561557-caca-486d-be7f-018c5e4e8956",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should stop the music",
+              "fullTitle": "Stop Button Test should stop the music",
+              "timedOut": false,
+              "duration": 7711,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get('C:\\\\Users\\\\235na\\\\WebstormProjects\\\\mogul-christmas\\\\index.html');\n// Find play button\nlet playButton = await driver.findElement(By.id('play-btn'));\n// Click on the play button\nawait playButton.click();\nawait driver.sleep(3000);\n// Check if the play button is hidden after click on the play button\nlet isPlayButtonHidden = await playButton.isDisplayed();\nassert.strictEqual(isPlayButtonHidden, false);\n// Find stop button\nlet stopButton = await driver.findElement(By.id('stop-btn'));\n// Click the stop button\nawait stopButton.click();\nawait driver.sleep(2000);\n// Check if the play button is displayed after click on the stop button\nlet isPlayButtonDisplayed = await playButton.isDisplayed();\nassert.strictEqual(isPlayButtonDisplayed, true);",
+              "err": {},
+              "uuid": "da2db38c-bbae-40bb-99c8-ce9365f9c925",
+              "parentUUID": "bd561557-caca-486d-be7f-018c5e4e8956",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "da2db38c-bbae-40bb-99c8-ce9365f9c925"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7711,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "382f6959-c823-40a7-ac14-36ea503c5dc6",
+          "title": "Christmas Day Message Test",
+          "fullFile": "C:\\Users\\235na\\WebstormProjects\\mogul-christmas\\test\\test.js",
+          "file": "\\test\\test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Christmas Day Message Test\"",
+              "fullTitle": "Christmas Day Message Test \"before all\" hook in \"Christmas Day Message Test\"",
+              "timedOut": false,
+              "duration": 1355,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build();",
+              "err": {},
+              "uuid": "e4ed6835-b2ed-419a-9cc1-1268a71ce8cc",
+              "parentUUID": "382f6959-c823-40a7-ac14-36ea503c5dc6",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Christmas Day Message Test\"",
+              "fullTitle": "Christmas Day Message Test \"after all\" hook in \"Christmas Day Message Test\"",
+              "timedOut": false,
+              "duration": 81,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "374530b7-f22d-40aa-a652-438f67e722e8",
+              "parentUUID": "382f6959-c823-40a7-ac14-36ea503c5dc6",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should display Christmas message on Christmas Day",
+              "fullTitle": "Christmas Day Message Test should display Christmas message on Christmas Day",
+              "timedOut": false,
+              "duration": 3860,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get('C:\\\\Users\\\\235na\\\\WebstormProjects\\\\mogul-christmas\\\\index.html');\n// Find element christmas_day_message\nlet messageDisplay = await driver.findElement(By.css('.christmas_day_message'));\n// Get today's date\nlet currentDate = new Date();\n// Check if it's Christmas Day\nif (currentDate.getMonth() === 11 && currentDate.getDate() === 25) {\n    // style should be set to 'block'\n    let displayStyle = await messageDisplay.getAttribute('style');\n    assert.strictEqual(displayStyle, 'display: block;');\n    await driver.sleep(2000);\n} else {\n    // style should be set to 'none'\n    let displayStyle = await messageDisplay.getAttribute('style');\n    assert.strictEqual(displayStyle, 'display: none;');\n    await driver.sleep(2000);\n}",
+              "err": {},
+              "uuid": "dbfcc8b5-0296-4317-8a2a-6cc1ed9ac6e8",
+              "parentUUID": "382f6959-c823-40a7-ac14-36ea503c5dc6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "dbfcc8b5-0296-4317-8a2a-6cc1ed9ac6e8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3860,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "fa32bc55-be86-4707-b79d-a8659e9b2dfb",
+          "title": "Christmas Day Countdown Message Test",
+          "fullFile": "C:\\Users\\235na\\WebstormProjects\\mogul-christmas\\test\\test.js",
+          "file": "\\test\\test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Christmas Day Countdown Message Test\"",
+              "fullTitle": "Christmas Day Countdown Message Test \"before all\" hook in \"Christmas Day Countdown Message Test\"",
+              "timedOut": false,
+              "duration": 1208,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build();",
+              "err": {},
+              "uuid": "412c25ea-7d46-4f1d-bdba-6fd3277af6d7",
+              "parentUUID": "fa32bc55-be86-4707-b79d-a8659e9b2dfb",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Christmas Day Countdown Message Test\"",
+              "fullTitle": "Christmas Day Countdown Message Test \"after all\" hook in \"Christmas Day Countdown Message Test\"",
+              "timedOut": false,
+              "duration": 117,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "c43310c1-3013-49ed-8084-78767fc5570d",
+              "parentUUID": "fa32bc55-be86-4707-b79d-a8659e9b2dfb",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should display countdown days until Christmas",
+              "fullTitle": "Christmas Day Countdown Message Test should display countdown days until Christmas",
+              "timedOut": false,
+              "duration": 5826,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get('C:\\\\Users\\\\235na\\\\WebstormProjects\\\\mogul-christmas\\\\index.html');\n// Find element christmasDayCountdown\nlet countdownElement = await driver.findElement(By.id('christmasDayCountdown'));\nawait driver.sleep(2000);\n// Get the text content of the countdown element\nlet countdownText = await countdownElement.getText();\nawait driver.sleep(2000);\n// Check if the countdown text contains 'days left until Christmas'\nassert.strictEqual(countdownText.includes('days left until Christmas'), true);",
+              "err": {},
+              "uuid": "1cdc927f-8be2-47ba-8038-92ee563b278f",
+              "parentUUID": "fa32bc55-be86-4707-b79d-a8659e9b2dfb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1cdc927f-8be2-47ba-8038-92ee563b278f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5826,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "cff66b0c-1ef8-49b2-b3ab-899938fa5280",
+          "title": "Christmas Day Countdown Test",
+          "fullFile": "C:\\Users\\235na\\WebstormProjects\\mogul-christmas\\test\\test.js",
+          "file": "\\test\\test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Christmas Day Countdown Test\"",
+              "fullTitle": "Christmas Day Countdown Test \"before all\" hook in \"Christmas Day Countdown Test\"",
+              "timedOut": false,
+              "duration": 1378,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build();",
+              "err": {},
+              "uuid": "2f2a7854-92a8-44c8-8da5-8e5360c4dac5",
+              "parentUUID": "cff66b0c-1ef8-49b2-b3ab-899938fa5280",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Christmas Day Countdown Test\"",
+              "fullTitle": "Christmas Day Countdown Test \"after all\" hook in \"Christmas Day Countdown Test\"",
+              "timedOut": false,
+              "duration": 175,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "da9fb98a-a490-4c89-b81b-b0e1567e3e02",
+              "parentUUID": "cff66b0c-1ef8-49b2-b3ab-899938fa5280",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should display the correct number of days until Christmas",
+              "fullTitle": "Christmas Day Countdown Test should display the correct number of days until Christmas",
+              "timedOut": false,
+              "duration": 3947,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get('C:\\\\Users\\\\235na\\\\WebstormProjects\\\\mogul-christmas\\\\index.html');\n// Find element christmasDayCountdown\nlet countdownElement = await driver.findElement(By.id('christmasDayCountdown'));\nawait driver.sleep(2000);\n// Get the text content of the countdown element\nlet countdownText = await countdownElement.getText();\n// Extract the number of days from the text\nlet daysLeft = parseInt(countdownText.match(/\\d+/)[0]);\n// Calculate the expected number of days until Christmas\nlet currentDate = new Date();\nlet christmasDay = new Date(\"Dec 25, 2023 23:59:59\");\n//if (currentDate.getMonth() === 11 && currentDate.getDate() > 25) {\n  //  christmasDay.setFullYear(christmasDay.getFullYear() + 1); // If Christmas has passed, set it to next year\n//}\nlet differenceInTime = christmasDay.getTime() - currentDate.getTime();\nlet expectedDaysLeft = Math.floor(differenceInTime / (1000 * 60 * 60 * 24));\n// Compare the actual days left with the expected days left\nassert.strictEqual(daysLeft, expectedDaysLeft);",
+              "err": {},
+              "uuid": "b85e51c0-3839-4a03-b321-685a9686a0a1",
+              "parentUUID": "cff66b0c-1ef8-49b2-b3ab-899938fa5280",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b85e51c0-3839-4a03-b321-685a9686a0a1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3947,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
